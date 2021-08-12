@@ -118,33 +118,33 @@ void main()=>runApp(MyApp());
 
 ## flutter 图片组件
 
-   图片组件是显示图像的组件，image组件有很多构造函数，这里只描述两个
-   image.asset 本地图片
-   image.network 远程图片
+       图片组件是显示图像的组件，image组件有很多构造函数，这里只描述两个
+       image.asset 本地图片
+       image.network 远程图片
 
-   image组件的常用属性：
-   alignment: 图片的对齐方式
-   color和colorBlendMode：设置图片的背景颜色，通常和colorBlendMode配合一起使用，这样可以是图片颜色和背景颜色混合。
-   fit：类型-BoxFit fit属性用来控制图片的拉伸和挤压，这个都是根据父容器来的。
-        boxfit.fill:全图显示，图片会被拉伸，并充满父容器
-        boxfit.contain:全图显示，显示原比例，可能会有空隙
-        boxfit.cover:显示可能拉伸，可能裁切，充满（图片要充满整个容器，还不变形）
-        boxfit.fitWidth:宽度充满（横向充满），显示可能拉伸，可能裁切
-        boxfit.fitHeight:高度充满（竖向充满），显示可能拉伸，可能裁切
-        boxfit.scaleDown:效果和contain差不多，但是此属性不允许显示超过源图片大小，可小不可大。
-   repeat:平铺
-        imagerepeat.repeat:横向和纵向都进行重复，直到铺满整个画布
-        imagerepeat.repeatx:横向重复，纵向不重复
-        imagerepeat.repeaty:纵向重复，横向不重复
-   width:宽度 一般结合clipoval才能看到效果
-   height:高度 一般结合clipoval才能看到效果
+       image组件的常用属性：
+       alignment: 图片的对齐方式
+       color和colorBlendMode：设置图片的背景颜色，通常和colorBlendMode配合一起使用，这样可以是图片颜色和背景颜色混合。
+       fit：类型-BoxFit fit属性用来控制图片的拉伸和挤压，这个都是根据父容器来的。
+            boxfit.fill:全图显示，图片会被拉伸，并充满父容器
+            boxfit.contain:全图显示，显示原比例，可能会有空隙
+            boxfit.cover:显示可能拉伸，可能裁切，充满（图片要充满整个容器，还不变形）
+            boxfit.fitWidth:宽度充满（横向充满），显示可能拉伸，可能裁切
+            boxfit.fitHeight:高度充满（竖向充满），显示可能拉伸，可能裁切
+            boxfit.scaleDown:效果和contain差不多，但是此属性不允许显示超过源图片大小，可小不可大。
+       repeat:平铺
+            imagerepeat.repeat:横向和纵向都进行重复，直到铺满整个画布
+            imagerepeat.repeatx:横向重复，纵向不重复
+            imagerepeat.repeaty:纵向重复，横向不重复
+       width:宽度 一般结合clipoval才能看到效果
+       height:高度 一般结合clipoval才能看到效果
 
-   加载网络图片以及图片圆角请查看demo03中内容。
+       加载网络图片以及图片圆角请查看demo03中内容。
 
-   flutter 引入本地图片：
-   1、根目录中新建images文件夹（这个文件夹跟lib平行），在这个文件夹中需要定义2.0x(官方要求),3.0x(官方要求),4.0x
-   2、将图片存放到images对应大小的文件中
-   3、pubspec.yaml文件中声明添加的图片文件，这个注意要配置对哦
+       flutter 引入本地图片：
+       1、根目录中新建images文件夹（这个文件夹跟lib平行），在这个文件夹中需要定义2.0x(官方要求),3.0x(官方要求),4.0x
+       2、将图片存放到images对应大小的文件中
+       3、pubspec.yaml文件中声明添加的图片文件，这个注意要配置对哦
 
 
 
