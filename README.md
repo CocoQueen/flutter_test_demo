@@ -44,26 +44,26 @@ void main()=>runApp(MyApp());
  运行项目可以在terminal命令中输入flutter run。
 
  ### Flutter 把内容单独抽离成一个组件
- 
+
  在flutter中自定义组件其实就是一个类，这个类需要继承StatelessWidget/StatefulWidget
  前期我们都集成statelesswidget。后期再详解statefulwidget的使用。
  statelesswidget是无状态组件，状态不可变的widget
     它是一个抽象类 继承它时需要实现它的build方法。
  statefulwidget是有状态的组件，持有的状态可能在widget生命周期改变
- 
+
  ### MaterialApp和Scaffold 组件  装饰App
- 
+
     * MaterialApp
-    > MaterialApp 是一个方便的widget，它封装了应用程序实现material design所需要的一些widget。一般作为顶层widget使用。
-    > 常用的属性：
-        home（主页）[可以调用Scaffold组件]、title（标题）、color（颜色）、theme（主题）、routes（路由）...
+        > MaterialApp 是一个方便的widget，它封装了应用程序实现material design所需要的一些widget。一般作为顶层widget使用。
+        > 常用的属性：
+            home（主页）[可以调用Scaffold组件]、title（标题）、color（颜色）、theme（主题）、routes（路由）...
     * Scaffold
-    > Scaffold 是material design布局结构的基本实现，此类提供了用于显示drawer、snackbar和底部sheet的API。
-    > Scaffold有下面几个主要的属性：
-        appBar-显示在界面顶部的一个AppBar。
-        body-当前界面所显示的主要内容widget。
-        drawer-抽屉菜单控件。
-        ...
+        > Scaffold 是material design布局结构的基本实现，此类提供了用于显示drawer、snackbar和底部sheet的API。
+        > Scaffold有下面几个主要的属性：
+            appBar-显示在界面顶部的一个AppBar。
+            body-当前界面所显示的主要内容widget。
+            drawer-抽屉菜单控件。
+            ...
 
 
 
