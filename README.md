@@ -117,6 +117,7 @@ void main()=>runApp(MyApp());
 
 
 ## flutter 图片组件
+
    图片组件是显示图像的组件，image组件有很多构造函数，这里只描述两个
    image.asset 本地图片
    image.network 远程图片
