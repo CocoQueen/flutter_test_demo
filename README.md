@@ -1,6 +1,5 @@
 # flutter_test_demo
 
-A new Flutter application.
 
 ## Flutter目录结构介绍、入口、自定义widget、center组件、text组件、materialApp组件、scaffold组件
 
@@ -145,6 +144,35 @@ void main()=>runApp(MyApp());
        1、根目录中新建images文件夹（这个文件夹跟lib平行），在这个文件夹中需要定义2.0x(官方要求),3.0x(官方要求),4.0x
        2、将图片存放到images对应大小的文件中
        3、pubspec.yaml文件中声明添加的图片文件，这个注意要配置对哦
+
+## flutter listview 基础列表组件、水平列表组件、图标组件
+    ### flutter列表组件概述
+
+        列表布局是我们项目开发中最常用的一种布局方式。flutter中我们可以通过listview来定义列表项，支持
+        垂直和水平方向展示。通过一个属性就可以控制列表的显示方向。列表有以下分类：
+
+        1、垂直列表
+        2、垂直图文列表
+        3、水平列表
+        4、动态列表
+        5、矩阵式列表
+
+    ### flutter列表参数
+
+        scrollDirection:
+            Axis.horizontal:水平列表
+            Axis.vertical:垂直列表
+        padding:内边距
+        resolve:组件反向排序
+        children：列表元素 List<Widget>
+
+    ### 基本列表
+    参考demo04,代码
+
+
+
+
+
 
 
 
