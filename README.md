@@ -170,13 +170,14 @@ void main()=>runApp(MyApp());
     参考demo04,代码
 
 ## Gridview
+   ### 概述
    当数据量很大的时候用矩阵方式排列比较清晰，此时我们可以用网格列表组件Gridview实现布局。
 
    Gridview创建网格列表有多种方式，现在主要介绍以下两种：
    1、Gridview.count
    2、Gridview.builder （与listview类似）
 
-   常用属性：
+   ### 常用属性：
    scrollDirection:滚动方法
    padding:内边距
    resolve:组件反向排序
@@ -186,7 +187,28 @@ void main()=>runApp(MyApp());
    childAspectRatio:子widget宽高比例
    children:<Widget>[]
    gridDelegate:[SliverGridDelegateWithFixedCrossAxisCount（常用） SliverGridDeletegateWithMaxCrossAxisExtent]控制布局主要用在GridView.builder里面
-   
+
+##  flutter 页面布局 padding row(水平布局) column（垂直布局） expandde 组件
+
+    ### 概述
+    在html 中常见的布局标签都有padding属性，但是flutter中很多widget是没有padding属性。
+    这个时候我们可以用padding组件处理容器与子元素之间的间距。
+
+    ### padding属性：
+    padding：padding值 edgeinsetss 设置填充的值
+    child:子组件
+
+    ### row水平布局 column垂直布局 属性：
+
+    mainAxisAlignment:主轴的排序方式
+    crossAxisAlignment:次轴的排序方式
+    children:组件子元素
+
+    ### expanded 类似web中的flex布局
+    flex:元素占整个父row/column的比例
+    child：子元素
+
+
 
 
 
