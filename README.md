@@ -170,33 +170,34 @@ void main()=>runApp(MyApp());
     参考demo04,代码
 
 ## Gridview
-   ### 概述
-   当数据量很大的时候用矩阵方式排列比较清晰，此时我们可以用网格列表组件Gridview实现布局。
 
-   Gridview创建网格列表有多种方式，现在主要介绍以下两种：
-   
-   1、Gridview.count
-   
-   2、Gridview.builder （与listview类似）
+    ### 概述
+       当数据量很大的时候用矩阵方式排列比较清晰，此时我们可以用网格列表组件Gridview实现布局。
+    
+       Gridview创建网格列表有多种方式，现在主要介绍以下两种：
+       
+       1、Gridview.count
+       
+       2、Gridview.builder （与listview类似）
 
-   ### 常用属性：
-   scrollDirection:滚动方法
-   
-   padding:内边距
-   
-   resolve:组件反向排序
-   
-   crossAxisSpacing:水平子widget之间间距
-   
-   mainAxisSpacing:垂直子widget之间间距
-   
-   crossAxisCount:一行的widget数量
-   
-   childAspectRatio:子widget宽高比例
-   
-   children:<Widget>[]
-   
-   gridDelegate:[SliverGridDelegateWithFixedCrossAxisCount（常用） SliverGridDeletegateWithMaxCrossAxisExtent]控制布局主要用在GridView.builder里面
+    ### 常用属性：
+       scrollDirection:滚动方法
+       
+       padding:内边距
+       
+       resolve:组件反向排序
+       
+       crossAxisSpacing:水平子widget之间间距
+       
+       mainAxisSpacing:垂直子widget之间间距
+       
+       crossAxisCount:一行的widget数量
+       
+       childAspectRatio:子widget宽高比例
+       
+       children:<Widget>[]
+       
+       gridDelegate:[SliverGridDelegateWithFixedCrossAxisCount（常用） SliverGridDeletegateWithMaxCrossAxisExtent]控制布局主要用在GridView.builder里面
 
 ##  flutter 页面布局 padding row(水平布局) column（垂直布局） expandde 组件
 
