@@ -245,6 +245,29 @@ void main()=>runApp(MyApp());
             right:子元素距离右侧距离
             child:子组件
 
+## Flutter AspectRation Card 卡片组件
+    AspectRation 的作用是根据设置调整子元素child的宽高比。
+
+    AspectRation 首先会在布局限制条件允许的范围内尽可能的扩展，widget的高度是由宽度和比率决定的，
+    类似于BoxFit 中的contain，按照固定比率去尽量占满区域。
+
+    如果在满足左右限制条件过后无法找到一个可行的尺寸，AspectRation最终将会优先适应布局限制条件，
+    而忽略所设置的比率。
+
+        #### 属性：
+            aspectRation：宽高比，最终可能不会根据这个值去布局，具体则要看综合因素，外层是否允许按照
+                          这种比率进行布局，这只是一个参考值。
+            child:子组件
+
+
+    ### card组件
+       card是卡片组件块，内容可以由大多数型的widget构成，card具有圆角和阴影，这让它看起来有立体感。
+
+       #### 属性：
+       margin：外边距
+       child：子组件
+       shape：card的阴影效果，默认的阴影效果为圆角的长方形边
+
 
 
 
