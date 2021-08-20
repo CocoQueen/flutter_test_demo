@@ -268,7 +268,21 @@ void main()=>runApp(MyApp());
        child：子组件
        shape：card的阴影效果，默认的阴影效果为圆角的长方形边
 
+## Wrap 组件
+    Wrap可以实现流布局，单行的wrap跟row表现几乎一致，单列的wrap则跟row表现几乎一致。但row与column都是单行当列的，
+    wrap则突破了这个限制，mainAxis上空间不足时，则向crossAxis上去扩展显示。
 
+    ### Flutter RaisedButton定义一个按钮
+    flutter 中通过RaisedButton定义一个按钮。RaisedButton里面有很多的参数。
+
+    #### 属性
+        direction：主轴的方向，默认水平
+        algnment：主轴对齐方式
+        spacing：主轴方向上的间距
+        textDirection:文本方向
+        verticalDirection:定义了children摆放顺序，默认是down 见flex相关属性介绍
+        runAlignment:run的对齐方式。run可以理解为新的行或者列，如果是水平方向布局的话，run可以理解为新的一行
+        runSpacing:run的间距
 
 
 
