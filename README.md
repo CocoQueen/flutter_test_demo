@@ -219,6 +219,34 @@ void main()=>runApp(MyApp());
     flex:元素占整个父row/column的比例
     child：子元素
 
+## Flutter 页面布局 Stack层叠组件  Stack 与 Align   Stack 与 Positioned 实现定位布局
+
+   ### stack 组件
+        stack表示堆的意思 我们可以用stack 或者stack结合align或者stack结合positioned来实现页面的定位布局
+
+        类似Android RelativeLayout 布局  先放的控件在下 后放的在上
+
+        #### 属性
+            alignment：配置所有子元素的显示位置
+            children：子组件
+   ### stack align
+        stack 组件中结合align组件可以控制每个子元素的显示位置
+
+        #### 属性
+            alignment:配置所有子元素显示的位置
+            child：子组件
+   ### stack positioned
+        stack 组件中结合positioned组件也可以控制每个子元素的显示位置
+
+        #### 属性
+            top:子元素距离顶部的距离
+            bottom:子元素距离底部的距离
+            left:子元素距离左侧距离
+            right:子元素距离右侧距离
+            child:子组件
+
+
+
 
 
 
